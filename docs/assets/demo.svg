@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" font-family="Menlo, Consolas, monospace" font-size="14">
+  <rect width="760" height="330" rx="10" fill="#101418"/>
+  <circle cx="24" cy="22" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="22" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="22" r="6" fill="#27c93f"/>
+  <text x="380" y="27" fill="#8b949e" text-anchor="middle" font-size="12">devps — which dev servers did I leave running?</text>
+  <g fill="#c9d1d9">
+    <text x="24" y="62"><tspan fill="#7ee787">$</tspan> devps</text>
+    <text x="24" y="94" fill="#d2a8ff">PORT  ADDR       PID   COMMAND                 PROJECT        BRANCH            AGE</text>
+    <text x="24" y="118">3000  127.0.0.1  3987  <tspan fill="#79c0ff">next</tspan>                    store-web      <tspan fill="#7ee787">main</tspan>              3h12m</text>
+    <text x="24" y="140">5173  127.0.0.1  4102  <tspan fill="#79c0ff">vite</tspan>                    shop-frontend  <tspan fill="#7ee787">feature/checkout</tspan>  <tspan fill="#f778ba">2d</tspan></text>
+    <text x="24" y="162">8000  *          5210  <tspan fill="#79c0ff">django runserver</tspan>        billing-api    <tspan fill="#7ee787">fix/api-timeout</tspan>   <tspan fill="#f778ba">1d2h</tspan></text>
+    <text x="24" y="184">9090  127.0.0.1  6001  <tspan fill="#79c0ff">go run (metrics-relay)</tspan>  metrics-relay  <tspan fill="#7ee787">main</tspan>              45m</text>
+    <text x="24" y="216" fill="#8b949e">2 other listeners hidden (rerun with --all to show)</text>
+    <text x="24" y="256"><tspan fill="#7ee787">$</tspan> devps kill 5173</text>
+    <text x="24" y="286">sent SIGTERM to pid 4102 (<tspan fill="#79c0ff">vite</tspan>, port 5173, shop-frontend @ <tspan fill="#7ee787">feature/checkout</tspan>)</text>
+  </g>
+</svg>
